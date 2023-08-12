@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FASTQ Analyzer</title>
+</head>
+<body>
+    <h1>FASTQ Analyzer</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="fastq_file">Upload FASTQ File:</label>
+        <input type="file" name="fastq_file" accept=".fastq">
+        <button type="submit">Analyze</button>
+    </form>
+</body>
+</html>
